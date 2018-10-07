@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/dotLyout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ViewView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="250dp"
+        android:gravity="fill_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/BigWelcomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/BigWelcomeText"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/YellowMediumWelcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="10dp"
+                android:text="@string/YellowMediumWelcomeText"
+                android:textColor="#ffea00"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/MediumWelcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="25dp"
+                android:text="@string/MediumWelcomeText"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/SmallWelcomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/SmallWelcomeText"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/ViewView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/dotLyout"
+        android:alpha="0.5"
+        android:background="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/btn_nxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+</RelativeLayout>

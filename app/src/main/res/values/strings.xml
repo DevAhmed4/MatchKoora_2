@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Match Koora_ماتش كورة</string>
+    <string name="next">التالي</string>
+    <string name="start">إبدأ</string>
+    <string name="BigWelcomeText">     طعم المنافسة     </string>
+    <string name="BigWelcomeText2">     اظهر مهاراتك     </string>
+    <string name="BigWelcomeText3">     اصعد للقمة معنا     </string>
+    <string name="YellowMediumWelcomeText">   الفوز  </string>
+    <string name="MediumWelcomeText">     مع اصدقاء</string>
+    <string name="SmallWelcomeText"> يمكنك فعلها الان وبكل بساطة يمكنك فعلها الان وبكل بساطة يمكنك فعلها الان وبكل بساطة يمكنك فعلها الان وبكل بساطة يمكنك فعلها الان وبكل بساطة يمكنك فعلها الان وبكل بساطة</string>
+</resources>
